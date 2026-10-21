@@ -1,11 +1,16 @@
 # PROSES
 
 ## 1. Persona dan masalahnya
-(2-3 kalimat dengan kata-katamu sendiri: siapa pengguna persona kamu, masalah apa yang
- diselesaikan fitur khasnya di layar.)
+Persona saya adalah petugas gedung yang perlu mengetahui ketersediaan ruang atau alat pada tanggal tertentu. Sebelumnya, petugas harus melihat daftar peminjaman satu per satu untuk mengetahui slot yang masih tersedia. Karena itu, saya membuat fitur papan ketersediaan agar petugas bisa melihat sisa kapasitas dan status setiap slot secara langsung.
 
 ## 2. Rancangan komponen dan state
-(Gambar atau tulis pembagian komponen: komponen apa saja, state apa disimpan di komponen mana, dan props apa yang mengalir ke bawah. Rancang ini sebelum menulis kode, lalu catat kalau berubah di tengah jalan.)
+Pembagian komponen yang saya gunakan:
+
+App.tsx: komponen utama yang menghubungkan data, API, dan komponen lainnya.
+SumberDaya.tsx: menampilkan daftar sumber daya dan form untuk menambahkan sumber daya.
+FormPeminjaman.tsx: menangani input untuk membuat peminjaman.
+DaftarPeminjaman.tsx: menampilkan daftar peminjaman dan menyediakan filter serta detail peminjaman.
+api/pinjam.ts: berisi fungsi untuk berkomunikasi dengan backend.
 
 ## 3. Satu keputusan desain
 (Satu keputusan yang kamu ambil, pilihan lain yang kamu pertimbangkan, dan alasanmu memilih yang ini. Contoh: kenapa daftar peminjaman diambil ulang dari server setelah setiap aksi, bukan hanya diubah di state.)
