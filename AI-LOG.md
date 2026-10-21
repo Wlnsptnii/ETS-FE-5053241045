@@ -1,0 +1,21 @@
+# AI-LOG
+
+Catat setiap penggunaan AI yang menghasilkan kode. Jika tidak memakai AI sama sekali, tulis satu baris: **tidak memakai AI**.
+
+Log yang jujur tidak mengurangi nilai, sebanyak apa pun AI dipakai. Yang mengurangi nilai adalah log yang tidak sesuai dengan kode, atau isi log yang tidak bisa kamu jelaskan.
+
+## (Nama fitur atau komponen, misalnya: Penanganan error 409 di form peminjaman, F5)
+- Prompt: (ringkas, apa yang kamu minta)
+- Dipakai: (bagian kode yang kamu ambil, misalnya nama komponen/fungsi dan file)
+- Diubah: (apa yang kamu ubah atau perbaiki dari hasil AI, dan kenapa)
+
+## (Entri berikutnya)
+- Prompt:
+- Dipakai:
+- Diubah:
+
+## (Entri 1)
+- Prompt: Meminta bantuan untuk memperbaiki error FormEvent pada file SumberDaya.tsx
+- Dipakai: Perbaikan kode import FormEvent di file src/components/SumberDaya.tsx.
+- Diubah:Menambahkan kembali FormEvent karena masih digunakan pada fungsi submit. Sebelumnya, import tersebut dihapus sehingga muncul error saat menjalankan npx tsc -b.
+
